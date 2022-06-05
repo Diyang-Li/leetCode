@@ -87,21 +87,29 @@ public class _542_01_Matrix {
             }
         }
 
+        // 操纵移动的坐标
         int[] dx = {1, -1, 0, 0};
         int[] dy = {0, 0, 1, -1};
 
+        //queue为空意味着，所有看过的cell的周围全部更新过，也就是更新完了所有的cell
         while(!queue.isEmpty()){
+            // 看看哪个已经update的小可爱，周围的还没有update过呢
             int[] curCell = queue.poll();
+            //当前cell的coordinate
             int x = curCell[0];
             int y = curCell[1];
 
+            // move up dowm lef right
             for(int i = 0; i<4; i++){
                 int mx = x + dx[i];
                 int my = y + dy[i];
 
+                // Not out of bounds &&  Haven't been updated
                 if(mx >= 0 && my >= 0 && mx < rowLen && my < colLen && !path[mx][my]){
                     path[mx][my] = true;
+                    // Current cell' distance of nearest 0, plus 1, since [mx, my] needs to move 1 step to the current cell.
                     result[mx][my] = result[x][y] + 1;
+                    // add the move cell to the queue, for find the cells around the move cells.
                     queue.add(new int[]{mx, my});
                 }
             }
