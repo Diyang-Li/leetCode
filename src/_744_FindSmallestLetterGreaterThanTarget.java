@@ -8,26 +8,25 @@ import java.time.OffsetDateTime;
 public class _744_FindSmallestLetterGreaterThanTarget {
     /**
      * my method, fit the template of binary search
+     *
      * @param letters
      * @param target
      * @return
      */
     public static char nextGreatestLetter(char[] letters, char target) {
-        if (target >= letters[letters.length-1] || target < letters[0]) {
+        if (target >= letters[letters.length - 1]) {
             return letters[0];
         }
 
         int start = 0;
         int end = letters.length - 1;
         int mid = 0;
-        int index = 0;
 
         while (start <= end) {
-            mid = start + (end-start) / 2;
+            mid = start + (end - start) / 2;
             char midChar = letters[mid];
             if (letters[mid] <= target && letters[mid + 1] > target) {
-                index = mid;
-                break;
+                return letters[mid + 1];
             } else if (letters[mid] > target) {
                 end = mid - 1;
             } else {
@@ -35,12 +34,17 @@ public class _744_FindSmallestLetterGreaterThanTarget {
             }
         }
 
-                return letters[index + 1];
-
+        if (letters[mid] > target) {
+            return letters[mid];
+        } else {
+            return letters[mid + 1];
+        }
     }
+
 
     /**
      * I don't like this
+     *
      * @param letters
      * @param target
      * @return
