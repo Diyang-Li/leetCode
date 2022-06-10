@@ -1,0 +1,2 @@
+1. 35 744同一种题，如果在binary search的过程中找到了target，就可以直接返回，如果没找到，那么mid一定是在target周围，
+   根据题目要求直接取mid + 1, mid , mid-1
