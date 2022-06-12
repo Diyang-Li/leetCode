@@ -1,3 +1,5 @@
+package binarySearch;
+
 /**
  * @author Diyang Li
  * @create 2022-06-09 11:24 PM
@@ -20,7 +22,6 @@ public class _35_SearchInsertPosition {
             }
         }
         if(nums[mid] > target){
-
             return mid;
         }else{
             return mid+1;

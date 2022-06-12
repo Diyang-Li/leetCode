@@ -1,3 +1,5 @@
+package binarySearch;
+
 import javax.sound.midi.Soundbank;
 import java.time.OffsetDateTime;
 
