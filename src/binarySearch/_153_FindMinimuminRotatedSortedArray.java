@@ -16,16 +16,19 @@ public class _153_FindMinimuminRotatedSortedArray {
             // if larger, we totaly abandon mid
             // if equals, this is the target we want, since mid always be the previous of the end, when equals, the start = end
             // so just make start + 1, then start > end, stop the while, get the start -1 position
-            if(nums[mid] >= nums[end]){
+            if(nums[mid] > nums[end]){
                 start = mid+1;
-            }else{
+            }else if (nums[mid] == nums[end]){
+                end--;
+            }
+            else{
                 // No end = mid - 1;
                 // Because
                 end = mid;
             }
         }
 
-        return nums[start-1];
+        return nums[start];
     }
 
     public static void main(String[] args) {
