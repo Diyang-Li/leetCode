@@ -5,3 +5,4 @@
     154 154： 查找minimum number, compare with nums[end]
     81, 33: 首先判断在那一段上，81有重复的地方，mid==start,直接start++
 
+3. template of binary search: https://segmentfault.com/a/1190000016825704
