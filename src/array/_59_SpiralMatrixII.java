@@ -5,7 +5,7 @@ package array;
  * @create 2022-06-20 9:53 AM
  */
 public class _59_SpiralMatrixII {
-    public static int[][] generateMatrix1(int n) {
+    public static int[][] generateMatrix(int n) {
         int rowStart =0;
         int rowEnd = n-1;
         int colStart = 0;
@@ -50,7 +50,7 @@ public class _59_SpiralMatrixII {
     public static void main(String[] args) {
         int n1 = 3;
         int n2 = 4;
-        int[][] ints = generateMatrix1(n2);
+        int[][] ints = generateMatrix(n2);
         System.out.println(ints);
     }
 }
