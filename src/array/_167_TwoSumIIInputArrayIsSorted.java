@@ -1,4 +1,4 @@
-/**
+package array; /**
  * @author Diyang Li
  * @create 2022-05-28 2:06 PM
  */
@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * 167. Two Sum II - Input Array Is Sorted
  */
-public class TwoSum {
+public class _167_TwoSumIIInputArrayIsSorted {
     /**
      * 其中一种做法，start = 0 end = 最后，相加，数大了end往前， 数小了往后
      * @param numbers
@@ -21,7 +21,7 @@ public class TwoSum {
             int end = numbers.length-1;
             int[] result = new int[2];
 
-            while(start<=end){
+            while(start<end){
                 int num1 = numbers[start];
                 int num2 = numbers[end];
                 if(num1 + num2 > target){

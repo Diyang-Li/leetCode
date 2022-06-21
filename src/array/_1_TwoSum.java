@@ -28,7 +28,7 @@ public class _1_TwoSum {
     }
 
     /**
-     * Use map the record the position of each element number
+     * Use map the record the position of each element number,
      * @param nums
      * @param target
      * @return
