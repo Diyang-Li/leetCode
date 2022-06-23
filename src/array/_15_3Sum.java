@@ -9,6 +9,13 @@ import java.util.List;
  * @create 2022-06-21 10:52 AM
  */
 public class _15_3Sum {
+    /**
+     * 1. the index care different in the same triplet
+     * 2. the triplets in List cannot be same
+     * 3. nums[i] + nums[j] + nums[k] == 0
+     * @param nums
+     * @return
+     */
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         //sort the nums to avoid repeat elements
