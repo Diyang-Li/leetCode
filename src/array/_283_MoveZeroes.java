@@ -1,11 +1,12 @@
+package array;
+
 import java.util.Arrays;
-import java.util.Stack;
 
 /**
  * @author Diyang Li
  * @create 2022-05-28 12:22 PM
  */
-public class MoveZeroes {
+public class _283_MoveZeroes {
     /*public static void moveZeroes(int[] nums) {
         int[] tempZero = new int[nums.length];
         int zeroPos = nums.length-1;
