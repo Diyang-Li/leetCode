@@ -29,7 +29,6 @@ public class _26_RemoveDuplicatesfromSortedArray {
         int[] nums1 = {1,1,2};
         int[] nums2 = {0,0,1,1,1,2,2,3,3,4};
         int[] nums3 = {0};
-
         System.out.println(removeDuplicates(nums3));
     }
 }
