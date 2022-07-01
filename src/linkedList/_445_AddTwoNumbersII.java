@@ -24,6 +24,7 @@ public class _445_AddTwoNumbersII {
 
     /**
      * same method as the 2 Add Ewo Numbers, just we need to reverse the head before and after the sum operation
+     * Also can use stack in another method
      * O(n) O(n)
      * @param l1
      * @param l2
