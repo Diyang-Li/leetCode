@@ -2,6 +2,8 @@ dummy:
 1. 86: we use p2(the node next to the head to compare with the target),if don't use dummy, we will ignore the
     comparison between the fist node and target value;
 
+2. 23: Divide and Conquer + 21:Merge Two Sorted List, integrate two questions
+
 
 some questions needs primary:
 https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/
