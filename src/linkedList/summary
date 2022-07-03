@@ -4,6 +4,8 @@ dummy:
 
 2. 23: Divide and Conquer + 21:Merge Two Sorted List, integrate two questions
 
+3. 234: provide a method to find middle of linkedlist: fast and slow pointer, fast = head.next, slow = head
+      Also, when using the reverse linkedlist, we have to consider if the head can be null in the base case;
 
 some questions needs primary:
 https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/
