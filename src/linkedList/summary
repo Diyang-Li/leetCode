@@ -2,7 +2,7 @@ dummy:
 1. 86: we use p2(the node next to the head to compare with the target),if don't use dummy, we will ignore the
     comparison between the fist node and target value;
 
-2. 23: Divide and Conquer + 21:Merge Two Sorted List, integrate two questions
+2. 23, 148: Divide and Conquer + 21:Merge Two Sorted List, integrate two questions
 
 3. 234: provide a method to find middle of linkedlist:
         When finding the middle, there is a tricky part!!
@@ -10,6 +10,12 @@ dummy:
               b. if 1 2 3 4 mid = 2: slow = head, fast = head.next
               c. if 1 2 3 4 5 mid = 3, slow = head, fast = head/head.next
       Also, when using the reverse linkedlist, we have to consider if the head can be null in the base case;
+
+
+key template:
+1. fast and slow pointer
+2. merge two linked list
+3. consider dummy
 
 
 some questions needs primary:
