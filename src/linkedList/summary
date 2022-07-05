@@ -4,8 +4,13 @@ dummy:
 
 2. 23: Divide and Conquer + 21:Merge Two Sorted List, integrate two questions
 
-3. 234: provide a method to find middle of linkedlist: fast and slow pointer, fast = head.next, slow = head
+3. 234: provide a method to find middle of linkedlist:
+        When finding the middle, there is a tricky part!!
+              a. if 1 2 3 4 mid = 3: slow = head, fast = head
+              b. if 1 2 3 4 mid = 2: slow = head, fast = head.next
+              c. if 1 2 3 4 5 mid = 3, slow = head, fast = head/head.next
       Also, when using the reverse linkedlist, we have to consider if the head can be null in the base case;
+
 
 some questions needs primary:
 https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/
