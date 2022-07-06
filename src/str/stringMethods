@@ -38,3 +38,6 @@
     char sb.charAt(int index);
     sb.setCharAt(int n, char c);
 
+3. char
+    Character.isDigit(s.charAt(i)): if the char is number
+

@@ -1,0 +1,6 @@
+1. 8: give a string: "-412", traverse the string, then get the integer:
+        rest = rest*10 + s.charAt(i) - '0';
+        the sign of the number can be represented by +-1, then rest * sign will get the right number
+
+        max integer: Integer.MAX_VALUE
+        min integer: Integer.MIN_VALUE
