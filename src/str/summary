@@ -4,4 +4,10 @@
 
         max integer: Integer.MAX_VALUE
         min integer: Integer.MIN_VALUE
+
+2. 405: two's complement:
+        2: 00000010
+       -2: 11111101 + 1 = 11111110
+       a & b --> mod
 65: not a valuable
+
