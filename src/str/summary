@@ -9,5 +9,8 @@
         2: 00000010
        -2: 11111101 + 1 = 11111110
        a & b --> mod
+
+3. 67: num1 + num2 give a method to add two number, binary plus
+    used in 43 multiply
 65: not a valuable
 
