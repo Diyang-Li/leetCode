@@ -11,6 +11,8 @@ dummy:
               c. if 1 2 3 4 5 mid = 3, slow = head, fast = head/head.next
       Also, when using the reverse linkedlist, we have to consider if the head can be null in the base case;
 
+4. 345: provide a better way to move one pointer, until find the target one, then remove another
+
 
 key template:
 1. fast and slow pointer
