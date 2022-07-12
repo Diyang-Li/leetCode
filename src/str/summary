@@ -24,3 +24,6 @@ Regular expression:
     1. s.split("\\s+"): split with all whitespace and remove all whitespace in the array
     2. split("\\."): split with .
 
+
+some questions needs primary:
+https://leetcode.com/problems/reverse-words-in-a-string-ii/
