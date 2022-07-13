@@ -40,4 +40,6 @@
 
 3. char
     Character.isDigit(s.charAt(i)): if the char is number
+    Character.isLetter(char c): if the char is a letter
+    Character.toLowerCase(char c): change the char to lower case
 
