@@ -5,6 +5,35 @@ package slidingWindow;
  * @create 2022-07-16 6:53 PM
  */
 public class _209_MinimumSizeSubarraySum {
+
+    /**
+     * Best way with template
+     * @param target
+     * @param nums
+     * @return
+     */
+    public int minSubArrayLen1(int target, int[] nums) {
+        if(nums == null || nums.length == 0) return 0;
+
+        int left = 0;
+        int right = 0;
+        int sum = 0;
+        int rest = Integer.MAX_VALUE;
+
+        while(right < nums.length){
+            sum += nums[right];
+
+            while(sum >= target){
+                rest = Math.min(right - left + 1, rest);
+                sum -= nums[left];
+                left++;
+            }
+
+            right++;
+        }
+
+        return rest == Integer.MAX_VALUE? 0: rest;
+    }
     public int minSubArrayLen(int target, int[] nums) {
         if(nums == null || nums.length == 0){
             return 0;
