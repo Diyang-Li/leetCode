@@ -18,11 +18,24 @@
         don't forget the  if(sum > 0) in the end
 
 4. 165: use regular expression to split the string with a given expression
-65: not a valuable
+5. 65: not a valuable
+6. 125: a two pointer template of skipping the char that I want to ignore
+    while(left < right){
+        while(left < right && xxxx){
+            left++;
+        }
+
+        while(left < right && xxxx){
+            right--;
+        }
+    }
 
 Regular expression:
     1. s.split("\\s+"): split with all whitespace and remove all whitespace in the array
     2. split("\\."): split with .
+
+Time complexity
+    1.the time complexity of Arrays.sort() is O(n*logn)
 
 
 some questions needs primary:
