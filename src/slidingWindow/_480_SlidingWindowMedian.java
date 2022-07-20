@@ -7,6 +7,11 @@ import java.util.Arrays;
  * @create 2022-07-20 9:35 AM
  */
 public class _480_SlidingWindowMedian {
+
+    //Another method is to use priority queue!!!
+
+
+
     // [1,3,-1,-3,5,3,6,7]
     // before sliding window: win{1, 3, -1}, use Arrays.sort() to sort
     // the lenght of the rest is(len - k + 1);
