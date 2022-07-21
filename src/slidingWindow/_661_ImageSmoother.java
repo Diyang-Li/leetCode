@@ -6,7 +6,7 @@ package slidingWindow;
  */
 public class _661_ImageSmoother {
     /**
-     * Brut force, not good enough
+     * Brute force, not good enough
      * Can use Trie to solve
      */
     private int[] mx = {1,-1,0, 0, -1, 1, 1, -1};
