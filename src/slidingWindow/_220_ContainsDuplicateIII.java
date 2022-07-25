@@ -8,6 +8,17 @@ import java.util.Map;
  * @create 2022-07-25 11:15 AM
  */
 public class _220_ContainsDuplicateIII {
+    /**
+     * 桶的解法相当凝练，不过有一点可以啰嗦两句。不知道有没有人疑惑，在比较id - 1和id + 1这两个相邻桶时，只比较了一个元素，这足够吗？
+     * 哈希表的行为不是会用新元素覆盖旧元素，一个桶里有多个元素怎么办？
+     *
+     * 其实是覆盖根本不会发生...因为一旦要覆盖，就说明存在两个元素同属一个桶，直接返回true了。
+     * 这就是题解说的“一个桶内至多只会有一个元素”——数组输入里当然可以有多个元素属于同一个桶，但是一旦出现一对，算法就结束了
+     * @param nums
+     * @param k
+     * @param t
+     * @return
+     */
 
     public static boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         if(nums.length == 0 || k < 0){
