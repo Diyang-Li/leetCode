@@ -6,6 +6,9 @@
     not recommand map, because the int[] is faster, the len of sliding window is fixed. For 395, we need to use map,
     because the length of window is not fixed
 
+4. duplicate: 219 and 220: 220 is very very good problem, use bucket to solve questions, please how to put the
+    negative number into the bucket:Google, Airbnb, Adobe高频面试题
+
 Template:
 Some hard problem like 395, we need to find a sliding window
 
