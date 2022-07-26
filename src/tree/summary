@@ -1,0 +1,20 @@
+
+
+
+tree考的基本都是常考题目
+必考： Trie(送分), BST
+目前不考的：AVL- self-balancing binary search tree
+          Red-black Tree
+          B+/B-
+常考内容：
+    1. 树的遍历:
+        1). pre-order(跟左右), in-order(左根右), post-order(左根右) ---> Stack(new Stack): isEmpty(), pop(), push()
+            recursion不加分，但是不会red flag
+            so, it is better to use iteration
+        2). level order traversal ---> Queue(new LinkedList): isEmpty(), size(), poll(), offer()
+
+    2. 结构转换： tree -> linear
+                linear -> tree
+    3. LCA
+    4. BST
+    5. iterator:Amazon会考基础数据结构
