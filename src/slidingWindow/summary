@@ -1,7 +1,7 @@
 
 1. 992, 1248: still don't understand the Gauss's law part
     https://www.bilibili.com/video/BV1PU4y147tP?spm_id_from=333.880.my_history.page.click&vd_source=82c20631d4fe5c73eeeb14130d72a5be
-2. How to find the medium value by using priority queue?  295
+2. How to find the medium value by using priority queue?  295 Amazon/Ubur
 3. 438 can use int[] to record the frequency of each char in window, count to record the nums of valid char in window
     not recommand map, because the int[] is faster, the len of sliding window is fixed. For 395, we need to use map,
     because the length of window is not fixed
