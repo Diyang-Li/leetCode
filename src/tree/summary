@@ -14,8 +14,10 @@ tree考的基本都是常考题目
         2). level order traversal ---> Queue(new LinkedList): isEmpty(), size(), poll(), offer()
         3). vertical order traversal ---> BFS和DFS都行，记录offse 和 depth的structure不是固定的，具体分析但是DFS更好 987
 
-    2. 结构转换： tree -> linear
-                linear -> tree
+    2. 结构转换：
+        1). tree -> linear
+            linear -> tree
+        2). serialization(recursion)
     3. LCA
     4. BST
     5. iterator:Amazon会考基础数据结构
