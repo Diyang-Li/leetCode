@@ -61,8 +61,12 @@ public class _107_BinaryTreeLevelOrderTraversalII {
                 }
             }
             // add the level to res from first position
+            // res.add(level)
             res.add(0, level);
         }
+
+        //  Collections.reverse(res);
+        //        return res; It seems faster, but not actually in leetcode, not sure, can be a optimization
 
         return res;
     }
