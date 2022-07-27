@@ -12,9 +12,16 @@ tree考的基本都是常考题目
             recursion不加分，但是不会red flag
             so, it is better to use iteration
         2). level order traversal ---> Queue(new LinkedList): isEmpty(), size(), poll(), offer()
+        3). vertical order traversal ---> BFS和DFS都行，记录offse 和 depth的structure不是固定的，具体分析但是DFS更好 987
 
     2. 结构转换： tree -> linear
                 linear -> tree
     3. LCA
     4. BST
     5. iterator:Amazon会考基础数据结构
+
+
+
+Need Primary
+    1. https://leetcode.com/problems/binary-tree-vertical-order-traversal/  314是这个题的模板
+        video: https://www.youtube.com/watch?v=vA76W6JRSOs&t=1823s hight frequency
