@@ -38,12 +38,12 @@ public class _297_SerializeandDeserializeBinaryTree {
     }
 
     public static StringBuilder rserialize(TreeNode root, StringBuilder sb) {
-        if (root == null) sb.append("#,");
+        if (root == null) sb.append("#,"); //需要对null的进行操作，不能return！！
         else {
             sb.append(root.val);
             sb.append(",");
-            sb = rserialize(root.left, sb);
-            sb = rserialize(root.right, sb);
+            rserialize(root.left, sb);
+            rserialize(root.right, sb);
         }
         return sb;
     }
@@ -56,7 +56,7 @@ public class _297_SerializeandDeserializeBinaryTree {
 
     public static TreeNode rdeserialize(Queue<String> queue){
         String s = queue.poll();
-        if(s.equals("#")) return null;
+        if(s.equals("#")) return null; //不需要对null的进行操作，能return！！
         TreeNode treeNode = new TreeNode(Integer.parseInt(s));
         treeNode.left = rdeserialize(queue);
         treeNode.right = rdeserialize(queue);
@@ -70,6 +70,6 @@ public class _297_SerializeandDeserializeBinaryTree {
         head.left.left = new TreeNode(3);
         head.left.right = new TreeNode(4);
 
-        System.out.println(deserialize(serialize(head)).val);
+        System.out.println(serialize(head));
     }
 }
