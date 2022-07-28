@@ -1,4 +1,4 @@
-package tree;
+package tree.template;
 
 import javax.sound.midi.Soundbank;
 import java.util.Arrays;
@@ -21,6 +21,11 @@ public class _449_SerializeandDeserializeBST {
         }
     }
 
+    /**
+     * method 1
+     * @param root
+     * @return
+     */
     // Encodes a tree to a single string.
     public static String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
