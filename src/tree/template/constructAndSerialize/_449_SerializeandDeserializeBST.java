@@ -1,4 +1,4 @@
-package tree.template;
+package tree.template.constructAndSerialize;
 
 import javax.sound.midi.Soundbank;
 import java.util.Arrays;

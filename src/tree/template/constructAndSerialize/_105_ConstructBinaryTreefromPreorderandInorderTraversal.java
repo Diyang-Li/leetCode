@@ -1,4 +1,4 @@
-package tree.template;
+package tree.template.constructAndSerialize;
 
 import java.util.HashMap;
 import java.util.Map;

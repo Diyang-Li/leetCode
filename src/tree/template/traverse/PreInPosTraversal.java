@@ -1,4 +1,4 @@
-package tree.template;
+package tree.template.traverse;
 
 import javax.swing.*;
 import javax.swing.plaf.nimbus.State;

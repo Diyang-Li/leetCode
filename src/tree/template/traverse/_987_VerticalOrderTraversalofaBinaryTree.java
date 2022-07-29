@@ -1,4 +1,4 @@
-package tree.template;
+package tree.template.traverse;
 
 import java.util.*;
 

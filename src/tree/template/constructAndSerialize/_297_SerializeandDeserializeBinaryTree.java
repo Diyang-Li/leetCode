@@ -1,4 +1,4 @@
-package tree.template;
+package tree.template.constructAndSerialize;
 
 import java.util.Arrays;
 import java.util.LinkedList;
