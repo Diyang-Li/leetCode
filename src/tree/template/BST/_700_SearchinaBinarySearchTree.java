@@ -63,4 +63,33 @@ public class _700_SearchinaBinarySearchTree {
             return searchBST1(root.left, val);
         }
     }
+
+    /**
+     * iteration, use a prv to record the previous node
+     * @param root
+     * @param val
+     * @return
+     */
+    public TreeNode insertIntoBST1(TreeNode root, int val) {
+        TreeNode cur = root;
+        TreeNode newNode = new TreeNode(val);
+
+        if(cur == null){
+            cur = newNode;
+            return cur;
+        }
+
+        TreeNode prv = null;
+
+        while(cur !=null){
+            prv = cur;
+            if(cur.val > val) cur = cur.left;
+            else cur = cur.right;
+        }
+
+        if(prv.val > val) prv.left = newNode;
+        else prv.right = newNode;
+
+        return root;
+    }
 }

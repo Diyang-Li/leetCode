@@ -64,7 +64,6 @@ public class _1008_ConstructBinarySearchTreefromPreorderTraversal {
         int val = preorder[index];
 
         if(val < low || val > up) return null;
-
         index++;
         TreeNode root = new TreeNode(val);
         root.left = rbst(low, val);
