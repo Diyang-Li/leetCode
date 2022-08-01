@@ -9,8 +9,8 @@ tree考的基本都是常考题目
 常考内容：
     1. 树的遍历:
         1). pre-order(跟左右), in-order(左根右), post-order(左根右) ---> Stack(new Stack): isEmpty(), pop(), push()
-            recursion不加分，但是不会red flag
-            so, it is better to use iteration
+            recursion(dfs)不加分，但是不会red flag
+            so, it is better to use iteration(bfs)
         2). level order traversal ---> Queue(new LinkedList): isEmpty(), size(), poll(), offer()
         3). vertical order traversal ---> BFS和DFS都行，记录offse 和 depth的structure不是固定的，具体分析但是DFS更好 987
 
@@ -18,8 +18,26 @@ tree考的基本都是常考题目
         1). tree -> linear
             linear -> tree
         2). serialization(recursion)
-    3. LCA
-    4. BST
+        3). construct tree:
+            a. use in/pre/postorder int[] 105
+            b. use serialization to build BST
+
+    3. LCA (Lowest Common Ancestor of a Binary Tree)
+        1) find the LAC
+            a. BST: return when p <= root <= q (235)
+            b. general BT: find p q on both side, left, right!=null, return root
+                                                  left = null return right
+                                                  right = null return left
+
+    4. BST(Binary Search Tree)
+       1) search target vale in BST O(nlogn)
+       2) inser a val into BST(701) find the right null node to insert --> recursion
+       3) delete a val from BST(450) find the successor to replace the removed node --> recursion
+       4) valid binary tree(98) use inorder traverse recursion --? recursion is most fast
+       5) iterator(173) actuall template inorder traverse, but we have to know the default methods of iterator: constructor, hasNext, next
+          very very very high level
+       6) 449 method 1: template of constructing BST, queue
+
     5. iterator:Amazon会考基础数据结构
 
 
@@ -27,3 +45,13 @@ tree考的基本都是常考题目
 Need Primary
     1. https://leetcode.com/problems/binary-tree-vertical-order-traversal/  314是这个题的模板
         video: https://www.youtube.com/watch?v=vA76W6JRSOs&t=1823s hight frequency
+    2. https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/  297模板
+    3. https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/description/ very high frequency in FB
+    4. https://leetcode.com/problems/closest-binary-search-tree-value/ easy！ template 700
+    5. https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/description/ template inorder traverse(resolved)
+
+
+ DP: didn't solve
+    1. https://leetcode.com/problems/unique-binary-search-trees/
+    2. https://leetcode.com/problems/unique-binary-search-trees-ii/
+
