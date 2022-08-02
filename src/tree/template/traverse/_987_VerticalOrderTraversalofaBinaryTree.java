@@ -28,6 +28,9 @@ public class _987_VerticalOrderTraversalofaBinaryTree {
     public static List<List<Integer>> verticalTraversal1(TreeNode root) {
         List<int[]> nodes = new ArrayList<int[]>();
         dfs(root, 0, 0, nodes);
+        for(int[] node: nodes){
+            System.out.println(Arrays.toString(node));
+        }
         Collections.sort(nodes, new Comparator<int[]>() {
             public int compare(int[] tuple1, int[] tuple2) {
                 if (tuple1[0] != tuple2[0]) {
@@ -39,9 +42,6 @@ public class _987_VerticalOrderTraversalofaBinaryTree {
                 }
             }
         });
-        for(int[] node: nodes){
-            System.out.println(Arrays.toString(node));
-        }
         List<List<Integer>> ans = new ArrayList<List<Integer>>();
         int size = 0;
         int lastcol = Integer.MIN_VALUE;
