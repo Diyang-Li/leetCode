@@ -38,7 +38,14 @@ tree考的基本都是常考题目
           very very very high level
        6) 449 method 1: template of constructing BST, queue
 
-    5. iterator:Amazon会考基础数据结构
+    5. backtracking and pure recursion
+        a). backtracking:
+                Generally, the backtracking methods are void, because we don't need to return information, if there are information returned
+                back, which will interrupt the other paths
+        b). pure recursion:
+
+
+
 
 
 

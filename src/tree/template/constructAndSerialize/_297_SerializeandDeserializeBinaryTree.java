@@ -29,10 +29,12 @@ public class _297_SerializeandDeserializeBinaryTree {
     // Encodes a tree to a single string.
     public static String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
-        return rserialize(root, sb).toString();
+        rserialize(root, sb);
+        return sb.toString();
     }
 
-    public static StringBuilder rserialize(TreeNode root, StringBuilder sb) {
+    // this is actually a backtracking
+    public static void rserialize(TreeNode root, StringBuilder sb) {
         if (root == null) sb.append("#,"); //需要对null的进行操作，不能return！！
         else {
             sb.append(root.val);
@@ -40,7 +42,6 @@ public class _297_SerializeandDeserializeBinaryTree {
             rserialize(root.left, sb);
             rserialize(root.right, sb);
         }
-        return sb;
     }
 
     public static TreeNode deserialize(String data) {
