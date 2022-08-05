@@ -43,6 +43,9 @@ tree考的基本都是常考题目
                 Generally, the backtracking methods are void, because we don't need to return information, if there are information returned
                 back, which will interrupt the other paths
         b). pure recursion:
+            when return same types, use array 1120
+            when return different types, use class to collect information 1123
+            when have to decide use left or right(hard!!!!) 549 1372
 
 
 

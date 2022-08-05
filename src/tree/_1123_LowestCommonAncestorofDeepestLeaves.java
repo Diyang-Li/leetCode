@@ -38,6 +38,11 @@ public class _1123_LowestCommonAncestorofDeepestLeaves {
         else return lcaDeepestLeaves(root.right);
     }
 
+    public int dfs(TreeNode root){
+        if(root == null) return 0;
+        return 1 + Math.max(dfs(root.left), dfs(root.right));
+    }
+
     /**
      * method 2: use class to collect information O(n)
      * @param root
@@ -60,19 +65,14 @@ public class _1123_LowestCommonAncestorofDeepestLeaves {
         else if(left.height > right.height) return left;
         else return right;
     }
-
     class Pair{
         int height; // height of deepest leaves;
-        TreeNode node;// LCA
 
+        TreeNode node;// LCA
         public Pair(TreeNode node, int height){
             this.height = height;
             this.node = node;
         }
-    }
-    public int dfs(TreeNode root){
-        if(root == null) return 0;
-        return 1 + Math.max(dfs(root.left), dfs(root.right));
     }
 
 
