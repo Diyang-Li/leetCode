@@ -34,7 +34,7 @@ public class _549_BinaryTreeLongestConsecutiveSequenceII {
     public int[] helper(TreeNode root) {
         if (root == null) return new int[2];
         int in = 1;
-        int de = 1;
+        int de = 1;  // count the current node
 
         if (root.left != null) {
             int[] left = helper(root.left);
@@ -44,7 +44,7 @@ public class _549_BinaryTreeLongestConsecutiveSequenceII {
 
         if (root.right != null) {
             int[] right = helper(root.right);
-            // have to compare the left and right
+            // have to compare the left and right, because we are not sure wich side is longer
             if (root.val == root.right.val + 1) in = Math.max(in, 1 + right[0]);
             if (root.val == root.right.val - 1) de = Math.max(de, 1 + right[1]);
         }

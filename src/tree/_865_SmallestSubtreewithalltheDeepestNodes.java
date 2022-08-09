@@ -44,6 +44,13 @@ public class _865_SmallestSubtreewithalltheDeepestNodes {
         else return subtreeWithAllDeepest(root.right);
     }
 
+    public int dfs(TreeNode root) {
+        if (root == null) return 0;
+        int left = dfs(root.left);
+        int right = dfs(root.right);
+        return 1 + Math.max(left, right);
+    }
+
     /**
      * use a class to collect information from nodes
      * @param root
@@ -53,7 +60,6 @@ public class _865_SmallestSubtreewithalltheDeepestNodes {
         Pair pair = dfs(root, 0);
         return pair.node;
     }
-
     public Pair dfs(TreeNode root, int height){
         if(root == null) return new Pair(null, height);
         // collect information from left and right child
@@ -73,12 +79,6 @@ public class _865_SmallestSubtreewithalltheDeepestNodes {
             this.node = node;
             this.height = height;
         }
-    }
 
-    public int dfs(TreeNode root) {
-        if (root == null) return 0;
-        int left = dfs(root.left);
-        int right = dfs(root.right);
-        return 1 + Math.max(left, right);
     }
 }
