@@ -6,6 +6,10 @@ tree考的基本都是常考题目
 目前不考的：AVL- self-balancing binary search tree
           Red-black Tree
           B+/B-
+
+Before start coding:
+    1. backtracking or pure recursion?
+    2. pre post or in order?
 常考内容：
     1. 树的遍历:
         1). pre-order(跟左右), in-order(左根右), post-order(左根右) ---> Stack(new Stack): isEmpty(), pop(), push()
@@ -36,6 +40,7 @@ tree考的基本都是常考题目
        4) valid binary tree(98) use inorder traverse recursion --? recursion is most fast
        5) iterator(173) actuall template inorder traverse, but we have to know the default methods of iterator: constructor, hasNext, next
           very very very high level
+       6) find successor(285)
        6) 449 method 1: template of constructing BST, queue
 
     5. backtracking and pure recursion
@@ -46,11 +51,15 @@ tree考的基本都是常考题目
             when return same types, use array 1120
             when return different types, use class to collect information 1123
             when have to decide use left or right(hard!!!!) 549 1372
+    6. compare between two trees: template 100
 
 
 
 
 
+leaf base case: 112
+    if(root == null) return false;
+    if(root.left == null && root.right == null)
 
 Need Primary
     1. https://leetcode.com/problems/binary-tree-vertical-order-traversal/  314是这个题的模板
@@ -64,4 +73,12 @@ Need Primary
  DP: didn't solve
     1. https://leetcode.com/problems/unique-binary-search-trees/
     2. https://leetcode.com/problems/unique-binary-search-trees-ii/
+
+ Morris: rare to use(501)
+
+ Graph is the main method for 742
+
+
+some questions use trie: 437
+
 
