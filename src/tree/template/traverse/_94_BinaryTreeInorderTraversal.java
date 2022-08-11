@@ -1,5 +1,8 @@
 package tree.template.traverse;
 
+import com.sun.source.tree.Tree;
+import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -57,7 +60,7 @@ public class _94_BinaryTreeInorderTraversal {
         return res;
     }
     // left --> root --> right
-    public List<Integer> inorderTraversal1(TreeNode root) {
+    public static List<Integer> inorderTraversal1(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if(root == null){
             return res;
@@ -77,5 +80,13 @@ public class _94_BinaryTreeInorderTraversal {
         }
 
         return res;
+    }
+    @Test
+
+    public void test(){
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(4);
+        inorderTraversal1(root);
     }
 }

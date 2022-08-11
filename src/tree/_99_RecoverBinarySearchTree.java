@@ -25,7 +25,8 @@ public class _99_RecoverBinarySearchTree {
             this.right = right;
         }
     }
-
+    // key point: inorder of bst is an increasing array, this problem is to find out how to switch two number that can recover the increasing order;
+    // must use first and second, because the two wrong node maybe not neighbor
     TreeNode first = null;
     TreeNode second = null;
     TreeNode prv = new TreeNode(Integer.MIN_VALUE);
@@ -51,7 +52,7 @@ public class _99_RecoverBinarySearchTree {
         if(root.val < prv.val) {
             if(first == null){
                 first = prv;
-                // why: because when the inorder[1,3,2,4] we could mark the second wrong num
+                // why: because when the inorder[1,3,2,4] we shoud mark the second wrong num at first time
                 // if not write this, pre -> 3, root -> 2 ----> pre -> 2, root -> 4 it is increase
                 // so we lost the chance to mark the second wrong node
                 second = root;
