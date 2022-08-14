@@ -10,6 +10,7 @@ tree考的基本都是常考题目
 Before start coding:
     1. backtracking or pure recursion?
     2. pre post or in order?
+    3. if BST: find the way in the inorder traverse: queue, linkedlist? list?
 常考内容：
     1. 树的遍历:
         1). pre-order(跟左右), in-order(左根右), post-order(左根右) ---> Stack(new Stack): isEmpty(), pop(), push()
@@ -41,7 +42,9 @@ Before start coding:
        5) iterator(173) actuall template inorder traverse, but we have to know the default methods of iterator: constructor, hasNext, next
           very very very high level
        6) find successor(285)
-       6) 449 method 1: template of constructing BST, queue
+       7) 449 method 1: template of constructing BST, queue
+       8) use two poiner in tree: 653, another problem is 274, use almost the same thoughts(sucessor and predecesor), but I haven't understand it
+
 
     5. backtracking and pure recursion
         a). backtracking:
