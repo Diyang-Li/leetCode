@@ -1,5 +1,5 @@
 1. tree
 2. graph
-3. 2D array
+3. 2D array: 490 505(dijsktra for calculating shortest path)
 
 All BFS problems can be solved by DFS
