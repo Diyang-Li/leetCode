@@ -11,6 +11,8 @@ public class _505_TheMazeII {
     int[][] dirs = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
     public int shortestDistance(int[][] maze, int[] start, int[] destination) {
         // record the distance from the start
+        // don't need the visited list like 490, because the point can be visited for finding out the shortest path
+        // but use count + distance[cur[0]][cur[1]] < distance[x][y] can help to end the while loop in dijsktra method
         int[][] distance = new int[maze.length][maze[0].length];
         for(int[] row: distance) Arrays.fill(row, Integer.MAX_VALUE);
         distance[start[0]][start[1]] = 0;
@@ -18,8 +20,9 @@ public class _505_TheMazeII {
         return distance[destination[0]][destination[1]] == Integer.MAX_VALUE? -1: distance[destination[0]][destination[1]];
     }
 
-    // find the shortest distance to the point that can make the ball stop
-    public void dijsktra(int[][] maze, int[] start, int[] destination, int[][] distance){
+    // find the shortest distance to the point that can make the ball stop, if the destination is the stop point, the distance must be updated
+    // or the distance will be max value
+    public void dijsktra (int[][] maze, int[] start, int[] destination, int[][] distance){
         // could use Queue here
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b)->(a[2] - b[2]));
         pq.offer(new int[]{start[0], start[1], 0});
