@@ -5,3 +5,13 @@ Monotonic stack: consider this method when need increasing period in an array
         cycle: 503 firs loop find the increase, second loop find the result directly
                (when cycle array: array[i%len] (i = n*len)is a good way to realize cycle)
         period increase: 503=1081 need to ignore some decrease, because there are some conditions
+
+
+Tips: // method to remove first few 0 in a String
+              StringBuilder sb = new StringBuilder();
+              boolean zero = true;
+              for(int i: stack){
+                  if(i == '0' && zero) continue;
+                  else zero = false;
+                  sb.append(i - '0');
+              }

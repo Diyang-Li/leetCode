@@ -30,7 +30,7 @@ public class _1081_SmallestSubsequenceofDistinctCharacters {
             stack.push(cur);
         }
         StringBuilder sb = new StringBuilder();
-        for(char c: stack) sb.append(c);
+
 
         return sb.toString();
     }
