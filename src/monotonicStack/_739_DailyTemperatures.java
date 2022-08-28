@@ -1,4 +1,4 @@
-package divideAndConquer;
+package monotonicStack;
 
 import java.util.Stack;
 
