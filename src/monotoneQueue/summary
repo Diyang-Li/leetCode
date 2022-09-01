@@ -1,0 +1,8 @@
+Deque<Integer> q = new ArrayDeque()/ LinkedList<>();
+peekFirst();
+pollFirst();
+offerFirst();
+
+peekLast();
+pollLast();
+offerLast();
