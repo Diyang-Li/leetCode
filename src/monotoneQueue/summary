@@ -6,3 +6,5 @@ offerFirst();
 peekLast();
 pollLast();
 offerLast();
+
+862: dynamic programming
