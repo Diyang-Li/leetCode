@@ -9,7 +9,7 @@ import java.util.Deque;
  */
 public class _1438_LongestContinuousSubarrayWithAbsoluteDiffLessThanorEqualtoLimit {
     public int longestSubarray(int[] nums, int limit) {
-        //本质上还是sliding window
+        //本质上还是sliding window, 同样可以使用qp，自动维护递增和递减，但是时间复杂度会高一些
         // increasing deque for recording smallest num in window
         // decreasing deque for recording largest num in the window
         Deque<Integer> in = new ArrayDeque<>();
@@ -44,5 +44,10 @@ public class _1438_LongestContinuousSubarrayWithAbsoluteDiffLessThanorEqualtoLim
         }
 
         return res;
+    }
+
+    public static void main(String[] args) {
+        float f = 20;
+
     }
 }
