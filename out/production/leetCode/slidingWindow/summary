@@ -1,0 +1,26 @@
+
+1. 992, 1248: still don't understand the Gauss's law part
+    https://www.bilibili.com/video/BV1PU4y147tP?spm_id_from=333.880.my_history.page.click&vd_source=82c20631d4fe5c73eeeb14130d72a5be
+2. How to find the medium value by using priority queue?  295 Amazon/Ubur
+3. 438 can use int[] to record the frequency of each char in window, count to record the nums of valid char in window
+    not recommand map, because the int[] is faster, the len of sliding window is fixed. For 395, we need to use map,
+    because the length of window is not fixed
+
+4. duplicate: 219 and 220: 220 is very very good problem, use bucket to solve questions, please how to put the
+    negative number into the bucket:Google, Airbnb, Adobe高频面试题
+
+Template:
+Some hard problem like 395, we need to find a sliding window
+
+Can use other method:
+1. 661-Trie
+
+need primary:
+https://leetcode.com/problems/moving-average-from-data-stream/
+https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/  high frequency
+https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/ very high frequency
+https://leetcode.com/problems/shortest-word-distance-ii/
+https://leetcode.com/problems/shortest-word-distance/
+https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+

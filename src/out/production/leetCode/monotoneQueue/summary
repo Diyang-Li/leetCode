@@ -1,0 +1,10 @@
+Deque<Integer> q = new ArrayDeque()/ LinkedList<>();
+peekFirst();
+pollFirst();
+offerFirst();
+
+peekLast();
+pollLast();
+offerLast();
+
+862, 1696: dynamic programming

@@ -1,0 +1,42 @@
+1. 8: give a string: "-412", traverse the string, then get the integer:
+        rest = rest*10 + s.charAt(i) - '0';
+        the sign of the number can be represented by +-1, then rest * sign will get the right number
+
+        max integer: Integer.MAX_VALUE
+        min integer: Integer.MIN_VALUE
+
+2. 405: two's complement:
+        2: 00000010
+       -2: 11111101 + 1 = 11111110
+       a & b --> mod
+
+3. 67: num1 + num2 give a method to add two number, binary plus
+    used in 43 multiply
+
+5. 415: sume of two string:
+        rest = sum % 10 + rest;
+        don't forget the  if(sum > 0) in the end
+
+4. 165: use regular expression to split the string with a given expression
+5. 65: not a valuable
+6. 125: a two pointer template of skipping the char that I want to ignore
+    while(left < right){
+        while(left < right && xxxx){
+            left++;
+        }
+
+        while(left < right && xxxx){
+            right--;
+        }
+    }
+
+Regular expression:
+    1. s.split("\\s+"): split with all whitespace and remove all whitespace in the array
+    2. split("\\."): split with .
+
+Time complexity
+    1.the time complexity of Arrays.sort() is O(n*logn)
+
+
+some questions needs primary:
+https://leetcode.com/problems/reverse-words-in-a-string-ii/

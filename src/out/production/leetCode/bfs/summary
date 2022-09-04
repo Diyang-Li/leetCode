@@ -1,0 +1,6 @@
+1. tree
+2. graph
+3. 2D array: 490 505(dijsktra for calculating shortest path)
+4. Topological: 207(template)
+
+All BFS problems can be solved by DFS
