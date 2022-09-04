@@ -3,6 +3,7 @@ package tree.template.traverse;
 import com.sun.source.tree.Tree;
 import org.testng.annotations.Test;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -82,7 +83,6 @@ public class _94_BinaryTreeInorderTraversal {
         return res;
     }
     @Test
-
     public void test(){
         TreeNode root = new TreeNode(3);
         root.left = new TreeNode(1);
