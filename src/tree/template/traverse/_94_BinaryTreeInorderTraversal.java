@@ -1,8 +1,8 @@
 package tree.template.traverse;
 
-import com.sun.source.tree.Tree;
-import org.testng.annotations.Test;
 
+
+import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
