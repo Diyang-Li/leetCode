@@ -1,3 +1,0 @@
-1. some questions about move target element to the last part: don't use pointers on both side, use fast and slow pointers
-2. two sum without order: put nums:position in a map, this is the first position, then map.get(result - nums)--> another position
-   two sum wight order: use left and right pointer, like the binary search
