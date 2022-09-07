@@ -6,6 +6,34 @@ package str;
  */
 public class _680_ValidPalindromeII {
     /**
+     * second method, more straightforward
+     * @param s
+     * @return
+     */
+    public boolean validPalindrome1(String s) {
+        int left = 0;
+        int right = s.length()-1;
+        while(left <= right && s.charAt(left) == s.charAt(right)){
+            left++;
+            right--;
+        }
+
+        if(left > right) return true;
+        if(isPali1(s, left+1, right) || isPali1(s, left, right-1)) return true;
+        return false;
+
+    }
+
+    public boolean isPali1(String s, int i, int j){
+        while(i <= j){
+            if(s.charAt(i) != s.charAt(j)) return false;
+            i++;
+            j--;
+        }
+        return true;
+    }
+
+    /**
      * my way: O(n) O(1)
      * can become more simple: https://www.youtube.com/watch?v=hvI-rJyG4ik
      * @param s
@@ -62,7 +90,9 @@ public class _680_ValidPalindromeII {
         return true;
     }
     public static void main(String[] args) {
-        String s = "ebcbbececabbacecbbcbe";
+        String s = "abcda";
+        _680_ValidPalindromeII t = new _680_ValidPalindromeII();
+        t.validPalindrome(s);
 
     }
 }
