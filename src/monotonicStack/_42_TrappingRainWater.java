@@ -1,6 +1,7 @@
 package monotonicStack;
 
-import java.util.Stack;
+import javax.sound.midi.Soundbank;
+import java.util.*;
 
 /**
  * @author Diyang Li
@@ -9,21 +10,32 @@ import java.util.Stack;
 public class _42_TrappingRainWater {
 
     public int trap(int[] height) {
-        // record the position in the height, because the index can be used to calculate the length of each pool
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> q = new ArrayDeque<>();
         int res = 0;
-        for(int i = 0; i < height.length; i++){
-            // has pool to store water
-            while(!stack.isEmpty() && height[i] > height[stack.peek()]){
-                int bottom = stack.pop();
-                if(stack.isEmpty()) break; // there is no left wall
-                int h = Math.min(height[i], height[stack.peek()]); // select lower wall in left and right walls
-                res += (h - height[bottom]) * (i - stack.peek()-1);
-            }
 
-            stack.push(i);
+        for(int i = 0; i < height.length; i++){
+            while(!q.isEmpty() && height[q.peekLast()] < height[i]){
+                // buttom
+                int buttom = height[q.pollLast()];
+                if(q.isEmpty()) break; // there is no leftwall
+                // walls on both sides
+                int right = height[i];
+                int left = height[q.peekLast()];
+                // the height of the pool;
+                int h = Math.min(left, right) - buttom;
+                int len = i - q.peekLast() - 1;
+                res += h * len;
+            }
+            q.offerLast(i);
         }
 
         return res;
     }
+
+    public static void main(String[] args) {
+        int[] height = {4,2,0,3,2,5};
+        _42_TrappingRainWater t = new _42_TrappingRainWater();
+        System.out.println(t.trap(height));
+    }
+
 }
