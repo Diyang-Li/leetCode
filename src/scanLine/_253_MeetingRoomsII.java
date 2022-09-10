@@ -41,31 +41,24 @@ public class _253_MeetingRoomsII {
      * @return
      */
     public int minMeetingRooms1(int[][] intervals) {
-        if(intervals.length == 0) return 0;
-        Arrays.sort(intervals, (a1, a2) -> {
-            return a1[0] - a2[0];
+        Arrays.sort(intervals, (a, b)-> {
+            return a[0] - b[0];
         });
 
-        PriorityQueue<int[]> q = new PriorityQueue<>((a1, a2) ->{
-            return a1[1] - a2[1];
+        //use peek() to find out the ealist end meeting, then pop out, which means the meeting has ended
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b)->{
+            return a[1] - b[1];
         });
+        pq.offer(intervals[0]);
 
-        q.offer(intervals[0]);
-
-        for(int i = 1; i<intervals.length; i++){
-            int[] last = q.poll();
-            int[] cur = intervals[i];
-
-            if(last[1] <= cur[0]) {
-                last[1] = cur[1];
-            }else{
-                q.offer(cur);
+        for(int i = 1; i < intervals.length; i++){
+            if(pq.peek()[1] <= intervals[i][0]){
+                pq.poll();// the peek meeting has already ended
             }
-
-            q.offer(last);
+            pq.offer(intervals[i]);
         }
 
-        return q.size();
+        return pq.size();
     }
 
 }
