@@ -24,3 +24,7 @@ https://leetcode.com/problems/shortest-word-distance/
 https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
 https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
 
+template:
+1. in
+2. while out
+3. calculate after while

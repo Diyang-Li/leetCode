@@ -1,9 +1,12 @@
 1. two sum HashMap<preSum, frequency/position>
+    When using HashMap, put (0, -1) or (0,0) when <sum, position>
     1). sum: 525 560
     2). Modular arithmetic: 974 523
 2. rangeSum
     1). 370 差分数组？？
-3. sliding window
+3. sliding window :
+    1). 862 VS 260: if all number are positive, the presum is increase, just use sliding window, wherear use monotonic queue
+        to ensure the sum in the queue is increasing
 4. monotonic queue
 
 
