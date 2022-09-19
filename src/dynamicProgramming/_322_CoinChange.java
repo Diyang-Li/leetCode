@@ -21,6 +21,7 @@ public class _322_CoinChange {
             for(int j = 0; j < len; j++){
                 // Important condition
                 if(coins[j] <= i && f[i - coins[j]] != Integer.MAX_VALUE){
+                    // don't forget the +1
                     f[i] = Math.min(f[i], f[i - coins[j]]+1);
                 }
             }
