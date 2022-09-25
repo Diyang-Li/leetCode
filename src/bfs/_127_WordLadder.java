@@ -8,26 +8,26 @@ import java.util.*;
  */
 public class _127_WordLadder {
     /**
-     * general bfs
+     * general bfs O(M*N)
      * @param beginWord
      * @param endWord
      * @param wordList
      * @return
      */
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        Set<String> set = new HashSet(wordList);
-        Queue<String> q = new LinkedList<>();
-        q.offer(beginWord);
+        Queue<String> q = new LinkedList<>();//queue
+        Set<String> set = new HashSet(wordList); // mark
+        q.offer(beginWord); // add to queue
 
         int step = 1;
         int len = beginWord.length();
 
         while(!q.isEmpty()){
-            int size = q.size();
-            for(int i = 0; i<size; i++){
+            int size = q.size(); // size
+            for(int i = 0; i<size; i++){  // loop the same layer
                 String cur = q.poll();
-                if(cur.equals(endWord)) return step;
-                for(int j = 0; j < len; j++){
+                if(cur.equals(endWord)) return step; // return when meet the target
+                for(int j = 0; j < len; j++){ // else queue.offer
                     for(char c = 'a'; c <= 'z'; c++){
                         StringBuilder sb = new StringBuilder(cur);
                         sb.setCharAt(j, c);
@@ -41,13 +41,13 @@ public class _127_WordLadder {
                     }
                 }
             }
-            step++;
+            step++; // step increasing
         }
         return 0;
     }
 
     /**
-     * Bidirectional DFS
+     * Bidirectional B FS
      * @param beginWord
      * @param endWord
      * @param wordList

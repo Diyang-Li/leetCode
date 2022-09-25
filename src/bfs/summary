@@ -1,6 +1,39 @@
 1. tree
 2. graph
 3. 2D array: 490 505(dijsktra for calculating shortest path)
-4. Topological: 207(template)
+4. Topological: 207(template) https://www.youtube.com/watch?v=IRH3oxooYlw&t=1792s
 
 All BFS problems can be solved by DFS
+
+
+Template of BFS：
+public......{
+    Queue<Node> q;
+    Set<Node> visited; // for marking flag
+    q.offer(start);
+    visited.add(Start) // visited to the set
+
+    int step = 0;
+
+    while(q not empty){
+        int size = q.size();
+        // Spread to arround
+        for(int i = 0; i < size; i++){ // forlooping the same layer   // tree会有，二维的bfs可能没有(490)
+            Node cur = q.pop();
+            // Note!!! have already meet the requirement
+            if(cur is target){
+                return step/meet the requirement;// treat the result
+            }
+            // add adjacent nod around the current to the q
+            for(Node x: cur.adj){
+                if(not visited){
+                    q.offer(x);
+                    visited.add(x);
+                }
+            }
+            step++;
+        }
+    }
+}
+
+

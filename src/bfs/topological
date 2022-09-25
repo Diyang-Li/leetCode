@@ -1,0 +1,30 @@
+Template of topological
+
+public...(DAG){
+// only used in Directed Acyclic Graph
+    res is the count/list/... of result
+    T empty list record the indegree
+    q queue/stack/else
+    map record the pointer of the vertices
+
+    for(vertice in DAG){
+        update the indegree in T(generally increase)
+    }
+
+    for(vertices in T){
+        indegree of vertices == 0, add to q
+    }
+
+    while(q is not empty){
+        cur = poll the first vertices
+        update res
+
+        for(vertices that cur pint to){
+            T (vertices position)--;
+            if(indo of vertices is 0){
+                add to q;
+            }
+        }
+    }
+    return res;
+}
