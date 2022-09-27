@@ -150,7 +150,7 @@ class UF{
                 parent[py] = px;
                 rank[px]++;
             }
-            count--;
+            count--;// 在减法过程中相当于算成水的部分了
         }
     }
 
