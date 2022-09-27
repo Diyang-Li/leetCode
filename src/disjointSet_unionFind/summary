@@ -2,3 +2,10 @@ Dynamic connectivity problem: Always be used to solve dynamic connectivity probl
 
 Union find is a data structure that keeps track of elements which are split into one or more disjoint sets.
 Its has two primary operations: find and union
+
+Template 1: Improve with size(weighted):
+    较少size的set挂在较多的parent下面以保持balance
+
+Template 2： Improved with ranked
+     较少rank的set挂在较多的parent下面以保持balance, rank不相同的时候，不需要update rank，
+     只有相同的时候需要
