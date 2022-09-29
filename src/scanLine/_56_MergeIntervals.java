@@ -39,4 +39,6 @@ public class _56_MergeIntervals {
 
         System.out.println(Arrays.toString(arr[1]));
     }
+
+
 }

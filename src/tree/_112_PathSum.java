@@ -23,30 +23,7 @@ public class _112_PathSum {
             this.right = right;
         }
     }
-
-    /**
-     * my method
-     * @param root
-     * @param targetSum
-     * @return
-     */
-    public boolean hasPathSum(TreeNode root, int targetSum) {
-        if(root == null) return false;
-        return helper(root, 0, targetSum);
-    }
-
-    public boolean helper(TreeNode root, int sum, int target){
-        if(root == null) return false;
-        if(root.left == null && root.right == null){
-            if((sum + root.val) == target) return true;
-            else return false;
-        }
-
-        boolean left = helper(root.left, sum + root.val, target);
-        boolean right =  helper(root.right, sum + root.val, target);
-
-        return left || right;
-    }
+    
 
     /**
      * method 2
