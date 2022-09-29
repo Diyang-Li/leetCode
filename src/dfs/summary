@@ -1,2 +1,15 @@
+Template
+result = []
+def backtrack(path, selecting list){
+    base case: satisfied some conditions
+        result.add(path)
+        return
 
-37 and 51 are hard questions,52 didn't finished
+    for(XX in selectinglist){
+        if(some conditions)
+        backtrack(path, selecting list)
+        revoke choice;
+    }
+}
+
+backtracking > depth-first search

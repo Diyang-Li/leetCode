@@ -5,6 +5,7 @@ package tree.template.traverse;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Stack;
 
@@ -84,9 +85,6 @@ public class _94_BinaryTreeInorderTraversal {
     }
     @Test
     public void test(){
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(1);
-        root.right = new TreeNode(4);
-        inorderTraversal1(root);
+
     }
 }
