@@ -1,4 +1,5 @@
 Dynamic connectivity problem: Always be used to solve dynamic connectivity problems
+O(mlogn): n is the parent length
 
 Union find is a data structure that keeps track of elements which are split into one or more disjoint sets.
 Its has two primary operations: find and union

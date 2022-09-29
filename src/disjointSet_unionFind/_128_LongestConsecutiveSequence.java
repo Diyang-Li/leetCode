@@ -14,7 +14,7 @@ public class _128_LongestConsecutiveSequence {
         Map<Integer, Integer> map = new HashMap<>();
 
         DSU dsu = new DSU(nums.length);
-
+        // the number in nums can be negative, so we need to union the position
         for(int i = 0; i < nums.length; i++){
             int cur = nums[i];
             if(map.containsKey(cur)){
