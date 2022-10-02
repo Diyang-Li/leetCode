@@ -1,7 +1,7 @@
 Template
 result = []
-def backtrack(path, selecting list){
-    base case: satisfied some conditions
+public  void backtrack(path, selecting list){
+    base case: satisfied some conditions(If add is not here, may don't have base case)
         result.add(path)
         return
 
@@ -13,3 +13,20 @@ def backtrack(path, selecting list){
 }
 
 backtracking > depth-first search
+
+// this template come from 37 Sudoku
+public boolean backtracking(list ){
+    BaseCase(cannot have if there is no add to result)
+
+    for(each element){
+        if(valid)/some treatment{
+            if(backtracking(list)){  // the only difference between void one
+                return true;
+            }else{
+                revoke/return false;
+            }
+        }
+    }
+    return true;
+
+}
