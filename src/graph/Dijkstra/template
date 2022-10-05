@@ -1,0 +1,21 @@
+function Dijkstra(Graph, source):
+    create vertex set pQ
+    for(each vertex v in Graph)
+        distance[v] = infinity
+        previous[v] = undefined
+        add v to Q
+    distinct[source] = 0;
+
+    while Q is not empty:
+        u <- vertex in Q with min dist[u]附近
+        remove u from Q
+        for(each neighbor v of u){
+            alt <- dist[u] _ length(u, v)
+            if(alt < dist[v]:
+                distance[v] = alt
+                previous[v] = u
+        }
+
+    return distance[], previous[]
+
+    !! All edges must be positive
