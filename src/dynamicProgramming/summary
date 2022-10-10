@@ -17,3 +17,5 @@ best way to debug: print result
 
   f(0) = 0 常常用作初始条件
   without any repeat calculation
+
+  常考的： 坐标类，序列类，双序列类
