@@ -1,8 +1,8 @@
 use: merge sort
      quick sort(quick select)
-     bucket sort没看
-     counting sort没看
-     heap sort  没看
+     bucket sort
+     counting sort
+     heap sort
 not usual: pancake sort
 
 not use: bubble sort

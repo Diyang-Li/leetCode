@@ -11,21 +11,9 @@
 
   704 use the template
 
-//////////////////////////////////////////////////////
-  tempate 1 blue and red:
-  m in range[0, N) N is the length of the array
-
-  l = -1
-  r = N
-  while(l+1 != r){
-    m = l+(r-l)/2
-    if(small){
-        l = m;
-    }else{
-        r = m;
-    }
-
-    return l or r
-  }
-  //////////////////////////////////////////////////////
-  template 2:
+template：the third one
+两种题：
+1. 非常直接找一个有序array中的某个值
+2. 像是410,先找到最大最小范围，然后从中间找到正确答案（isvalid function），也就是猜
+3. 类似300，事实不算是一个明显的bs，只是其中的一个找数字的部分使用到了bs的优化，这道题的结果集是一个sorted的array，这个优化的部分是，是找
+   arrays中第一个比cur大的值，然后替换，所以说，如果结果集是一个单调的array，也可能可以使用bs

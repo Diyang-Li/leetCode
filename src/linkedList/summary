@@ -23,3 +23,5 @@ key template:
 some questions needs primary:
 https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/
 https://leetcode.com/problems/plus-one-linked-list/
+
+//当需要考虑first node的改变的时候，可以考虑使用dummy 如 19 86

@@ -28,3 +28,21 @@ template:
 1. in
 2. while out
 3. calculate after while
+
+
+public int sd(arr/string arr){
+    Map<> map = new HashMap<>();
+    int left = 0;
+    int right = 0;
+    while(right.length < arr.length){
+        map.add()
+        while(out of range){
+            do some treatment;
+            left move left;
+            left++
+        }
+        calculate distance between right and left
+    }
+
+    return restult;
+}
