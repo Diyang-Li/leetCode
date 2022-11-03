@@ -1,4 +1,4 @@
-package prefixSum.template;
+package prefixSum;
 
 /**
  * @author Diyang Li
@@ -45,5 +45,10 @@ public class _724_FindPivotIndex {
             leftSum+=nums[i];
         }
         return -1;
+    }
+
+    public static void main(String[] args) {
+        System.err.println("EXIT 1");
+        System.exit(1);
     }
 }
