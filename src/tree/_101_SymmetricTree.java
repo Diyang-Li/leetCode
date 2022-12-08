@@ -1,5 +1,8 @@
 package tree;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author Diyang Li
  * @create 2022-08-05 3:15 PM
@@ -44,6 +47,17 @@ public class _101_SymmetricTree {
         boolean in = helper(l.right, r.left);
 
         return out && in;
+    }
+    static Map<String,Integer> map = new HashMap<>();
+
+
+    public static void main(String[] args) {
+
+            map.put("-o", 1);
+            map.put("-r", 2);
+            map.put("-k", 3);
+
+        System.out.println(map.get("-k"));
     }
 
 }

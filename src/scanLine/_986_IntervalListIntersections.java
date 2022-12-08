@@ -2,6 +2,7 @@ package scanLine;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * @author Diyang Li
@@ -28,5 +29,12 @@ public class _986_IntervalListIntersections {
         }
 
         return list.toArray(new int[list.size()][]);
+    }
+
+    public static void main(String[] args) {
+        //
+        String str = "01\\w34";
+        Pattern.quote(str);
+        System.out.println(str);
     }
 }

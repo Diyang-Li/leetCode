@@ -33,4 +33,10 @@ public class _1723_FindMinimumTimetoFinishAllJobs {
             sum[i]-=jobs[pos];
         }
     }
+
+    public static void main(String[] args) {
+        String s = "     s   t s";
+        String[] arr = s.split(" ");
+        System.out.println(Arrays.toString(arr));
+    }
 }
