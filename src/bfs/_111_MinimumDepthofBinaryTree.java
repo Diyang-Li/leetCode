@@ -1,5 +1,7 @@
 package bfs;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -68,5 +70,11 @@ public class _111_MinimumDepthofBinaryTree {
         if(root.left == null) return minDepth1(root.right)+1;
         if(root.right == null) return minDepth1(root.left) + 1;
         return Math.min(minDepth1(root.left), minDepth1(root.right)) + 1;
+    }
+
+    public static void main(String[] args) {
+        String str = "1#2#*#*#3#4#*#*#5#*#*#";
+        String[] split = str.split("#");
+        System.out.println(Arrays.toString(split));
     }
 }
