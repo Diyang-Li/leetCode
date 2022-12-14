@@ -26,11 +26,7 @@ import java.util.PriorityQueue;
     }
 
     public static void main(String[] args) {
-        int[][] arr = new int[3][2];
-        arr[0] = new int[]{3,3};
-        arr[1] = new int[]{5,-1};
-        arr[2] = new int[]{-2,4};
-        _973_KClosestPointstoOrigin t = new _973_KClosestPointstoOrigin();
-        t.kClosest(arr, 2);
+        char c = 98;
+        System.out.println(c);
     }
 }
