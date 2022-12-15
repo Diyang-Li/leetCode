@@ -7,6 +7,8 @@ package dfs;
 public class _79_WordSearch {
     // O(n*3^L) n is the size of the grid, 3 means 3 direction and L is the word length
     // O(L) the all stack is the length of the word
+    //1. we have to find the word firstly
+    //2. compared the each char
     int[] mx = {0,0,1,-1};
     int[] my = {1,-1,0,0};
     public boolean exist(char[][] board, String word) {
