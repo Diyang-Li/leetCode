@@ -19,7 +19,7 @@ public...(DAG){
         cur = poll the first vertices
         update res
 
-        for(vertices that cur pint to){
+        for(vertices that cur point to){
             T (vertices position)--;
             if(indo of vertices is 0){
                 add to q;

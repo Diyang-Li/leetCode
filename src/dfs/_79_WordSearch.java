@@ -53,4 +53,10 @@ public class _79_WordSearch {
 
         return exist;
     }
+
+    public static void main(String[] args) {
+        char a = 'a';
+        String s = String.valueOf(a);
+
+    }
 }
