@@ -64,5 +64,10 @@ public class _505_TheMazeII {
             }
         }
     }
+
+    public static void main(String[] args) {
+       Boolean[] a  = new Boolean[2];
+        System.out.println(a[1] = false);
+    }
 }
 

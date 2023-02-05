@@ -42,7 +42,7 @@ public class _987_VerticalOrderTraversalofaBinaryTree {
                 }
             }
         });
-        List<List<Integer>> ans = new ArrayList<List<Integer>>();
+        List<List<Integer>> ans = new ArrayList<>();
         int size = 0;
         int lastcol = Integer.MIN_VALUE;
         for (int[] tuple : nodes) {
@@ -121,5 +121,7 @@ public class _987_VerticalOrderTraversalofaBinaryTree {
         head.right.left = new TreeNode(2);
 
         System.out.println(verticalTraversal1(head));
+        char[] arr = new char[2];
+        System.out.println(arr[0]==' ');
     }
 }
